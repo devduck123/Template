@@ -1,0 +1,51 @@
+:root {
+  /* access variables with "var(--primary-color)" */
+  --background-color: blue;
+  --primary-color: red;
+  --secondary-color: green;
+}
+
+html {
+  font-family: sans-serif;
+  /* background-color: rgb(69, 69, 69); */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#hero-img {
+    background-image: url("/assets/hero_img.jpg");
+    background-color: black;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 7rem;
+}
+
+#hero-content {
+    text-align: center;
+    color: black;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
