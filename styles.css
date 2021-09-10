@@ -20,9 +20,14 @@ ul {
   list-style-type: none;
 }
 
+button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
 #hero-img {
     background-image: url("/assets/hero_img.jpg");
-    background-color: black;
+    background-color: rgb(69, 69, 69);
     height: 70%;
     background-position: center;
     background-repeat: no-repeat;
