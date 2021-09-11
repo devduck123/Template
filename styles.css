@@ -21,8 +21,8 @@ ul {
 }
 
 button {
-    padding: 0.5rem;
-    font-size: 0.8rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
 }
 
 #nav-list {
@@ -39,7 +39,7 @@ button {
 .nav-item {
   flex: 1;
   max-width: 25%;
-  margin: .8rem;
+  margin: 0.8rem;
   /* background: blue; */
 }
 
@@ -49,22 +49,20 @@ section:not(#hero-img) {
 }
 
 #hero-img {
-    background-image: url("/assets/hero_img.jpg");
-    background-color: rgb(69, 69, 69);
-    height: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding: 7rem;
+  background-image: url("/assets/hero_img.jpg");
+  background-color: rgb(69, 69, 69);
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 7rem;
 }
 
 #hero-content {
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
 }
-
-
 
 #features-and-pricing {
   display: flex;
