@@ -43,6 +43,10 @@ button {
   /* background: blue; */
 }
 
+/* hide every section except for hero-img */
+section:not(#hero-img) {
+  display: none;
+}
 
 #hero-img {
     background-image: url("/assets/hero_img.jpg");
@@ -59,6 +63,8 @@ button {
     text-align: center;
     color: black;
 }
+
+
 
 #features-and-pricing {
   display: flex;

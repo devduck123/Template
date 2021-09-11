@@ -32,29 +32,29 @@
   <body>
     <nav id="nav-list">
       <div class="nav-item">
-        <a class="nav-link" href="/index.html">
-          <button class="nav-btn">Home</button>
+        <a class="nav-link" href="TODO:">
+          <button class="nav-btn" data-page="page1">Home</button>
         </a>
       </div>
       <div class="nav-item">
         <a class="nav-link" href="TODO:">
-          <button class="nav-btn">About Us</button>
+          <button class="nav-btn" data-page="page2">About Us</button>
         </a>
       </div>
       <div class="nav-item">
         <a class="nav-link" href="TODO:">
-          <button class="nav-btn">Features and Pricing</button>
+          <button class="nav-btn" data-page="page3">Features and Pricing</button>
         </a>
       </div>
       <div class="nav-item">
         <a class="nav-link" href="TODO:">
-          <button class="nav-btn">Contact Us</button>
+          <button class="nav-btn" data-page="page4">Contact Us</button>
         </a>
       </div>
     </nav>
 
     <main>
-      <section id="hero-img">
+      <section id="hero-img" id="page1">
         <div id="hero-content">
           <h1>Hero: We Are the Ducks of Tomorrow.</h1>
           <p>
@@ -70,7 +70,7 @@
         </div>
       </section>
 
-      <section id="intro">
+      <section id="intro" id="page2" class="page">
         <h1>Introduction</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
@@ -80,9 +80,36 @@
           quod, eveniet, corrupti aliquam officiis amet enim adipisci delectus
           porro voluptate voluptatibus asperiores a. Iure, sapiente vero?
         </p>
+
+        <div id="intro-list">
+          <section class="intro-list-item">
+            <h2>WHEN</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aperiam accusamus autem error neque harum fuga officiis quisquam ex quo.
+            </p>
+          </section>
+          <section class="intro-list-item">
+            <h2>WHERE</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aperiam accusamus autem error neque harum fuga officiis quisquam ex quo.
+            </p>
+          </section>
+          <section class="intro-list-item">
+            <h2>MISSION</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aperiam accusamus autem error neque harum fuga officiis quisquam ex quo.
+            </p>
+          </section>
+          <section class="intro-list-item">
+            <h2>VALUES</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur aperiam accusamus autem error neque harum fuga officiis quisquam ex quo.
+            </p>
+          </section>
+        </div>
       </section>
 
-      <section id="features-and-pricing">
+      <section id="features-and-pricing" id="page3" class="page">
         <section id="features">
           <h1>Features</h1>
           <p>
@@ -93,6 +120,27 @@
             repellendus, atque, aut repudiandae sapiente dolores odit optio
             fugiat, ipsam quam unde!
           </p>
+          
+          <div id="feature-list">
+            <section class="feature-item">
+              <h2>feature1</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sit libero consequuntur similique impedit sed.
+              </p>
+            </section>
+            <section class="feature-item">
+              <h2>feature2</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sit libero consequuntur similique impedit sed.
+              </p>
+            </section>
+            <section class="feature-item">
+              <h2>feature3</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sit libero consequuntur similique impedit sed.
+              </p>
+            </section>
+          </div>
         </section>
   
         <section id="pricing">
@@ -105,10 +153,31 @@
             dolorum aut cupiditate aliquid, iusto molestiae asperiores neque
             fugit. Rerum.
           </p>
+
+          <div id="pricing-list">
+            <section class="pricing-item">
+              <h2>pricing1</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sit libero consequuntur similique impedit sed.
+              </p>
+            </section>
+            <section class="pricing-item">
+              <h2>pricing2</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sit libero consequuntur similique impedit sed.
+              </p>
+            </section>
+            <section class="pricing-item">
+              <h2>pricing3</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sit libero consequuntur similique impedit sed.
+              </p>
+            </section>
+          </div>
         </section>
       </section>
 
-      <section id="contact">
+      <section id="contact" id="page4" class="page">
         <h1>Contact Us | Resources</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
