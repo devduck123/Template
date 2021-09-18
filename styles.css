@@ -1,13 +1,15 @@
 :root {
   /* access variables with "var(--primary-color)" */
-  --background-color: blue;
-  --primary-color: red;
-  --secondary-color: green;
+  --background-color: rgb(169, 169, 210, 0.3);
+  --primary-color: rgb(69, 69, 110);
+  --secondary-color: rgba(169, 169, 210, 0.9);
 }
 
 html {
-  font-family: sans-serif;
-  /* background-color: rgb(69, 69, 69); */
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(1.5rem, 1vw+1.5rem, 2.5rem);
+  background-color: var(--background-color);
+  margin: 1%;
 }
 
 * {
@@ -21,26 +23,49 @@ ul {
 }
 
 button {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
   padding: 0.5rem;
-  font-size: 0.8rem;
 }
 
 #nav-list {
+  /* TODO: turn "sticky" feature off for mobile */
+  top: 0vh;
+  position: sticky;
+  z-index: 1;
+
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: stretch;
   column-gap: 10%;
-  /* background: red; */
 }
 
 .nav-item {
   flex: 1;
   max-width: 25%;
   margin: 0.8rem;
-  /* background: blue; */
+}
+
+.nav-btn {
+  background: linear-gradient(to bottom right,var(--background-color), var(--secondary-color), var(--background-color));
+  color: var(--primary-color);
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: 8%;
+  overflow: hidden;
+  box-shadow: 0 0 0.6em var(--primary-color);
+  transition: .4s ease-in-out;
+  height: 100%;
+  width: 80%;
+  padding: .3rem;
+  font-size: clamp(1.5rem, 1vw+2rem, 3rem);
+}
+
+.nav-btn:hover {
+  transform: scale(1.2);
 }
 
 /* hide every section except for hero-img */
@@ -48,15 +73,25 @@ section:not(#hero-img) {
   display: none;
 }
 
+.sec-title {
+  background: linear-gradient(to top right,var(--background-color), var(--secondary-color), var(--background-color));
+  text-align: center;
+  padding: .8em;
+  margin: 1%;
+  font-size: 4vw;
+}
+
+
 #hero-img {
   background-image: url("/assets/hero_img.jpg");
-  background-color: rgb(69, 69, 69);
+  background-color: var(--background-color);
+  opacity: 0.8;
   height: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 7rem;
+  padding: 8rem;
 }
 
 #hero-content {
