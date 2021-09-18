@@ -1,7 +1,7 @@
 :root {
   /* access variables with "var(--primary-color)" */
   --background-color: rgb(169, 169, 210, 0.3);
-  --primary-color: rgb(69, 69, 110);
+  --primary-color: rgb(59, 39, 69);
   --secondary-color: rgba(169, 169, 210, 0.9);
 }
 
@@ -9,6 +9,7 @@ html {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(1.5rem, 1vw+1.5rem, 2.5rem);
   background-color: var(--background-color);
+  color: var(--primary-color);
   margin: 1%;
 }
 
