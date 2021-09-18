@@ -1,5 +1,5 @@
 # Template
-HTML/CSS/JS website template
+HTML/CSS/JS single-page website template
 
 # What is this website for?
 - to learn more about best practices
