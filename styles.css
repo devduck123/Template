@@ -67,6 +67,8 @@ button {
 
 .nav-btn:hover {
   transform: scale(1.2);
+  background: var(--secondary-color);
+  opacity: 1;
 }
 
 #hero-img {
@@ -99,8 +101,23 @@ button {
 }
 
 #hero-btn {
-  
+  background: linear-gradient(var(--background-color), var(--secondary-color), var(--background-color));
+  font-size: clamp(1.5rem, 1vw+2rem, 3rem);
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: 8%;
+  overflow: hidden;
+  outline: none;
+  box-shadow: 0 0 0.6em var(--primary-color);
+  transition: .4s ease-in-out;
 }
+
+#hero-btn:hover {
+  transform: scale(1.2);
+  background: var(--primary-color);
+  color: whitesmoke;
+}
+  
 
 /* hide every section except for hero-img */
 section:not(#hero-img) {
@@ -112,12 +129,12 @@ section:not(#hero-img) {
   text-align: center;
   padding: .6em;
   margin: 1%;
-  font-size: 4vw;
+  font-size: clamp(1.2rem, 4vw + .8rem, 3rem);
 }
 
 .subsec-title {
   text-align: center;
-  font-size: 3.5vw;
+  font-size: clamp(.8rem, 3vw + .8rem, 2.5rem);
   padding-top: .2em;
   margin-top: 4%;
   background: -webkit-linear-gradient(var(--primary-color), var(--secondary-color));
