@@ -78,12 +78,28 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin: .5em;
   padding: 8rem;
+  border-radius: 3%;
+  box-shadow: 0 0 0.3em var(--primary-color);
 }
 
 #hero-content {
   text-align: center;
   color: black;
+}
+
+#hero-content > h1 {
+  font-size: 4vw;
+}
+
+#hero-content > p {
+  font-size: clamp(.6rem, 1vw + .8rem, 1.5rem);
+  padding: 2% 4% 2% 4%;
+}
+
+#hero-btn {
+  
 }
 
 /* hide every section except for hero-img */
@@ -94,7 +110,7 @@ section:not(#hero-img) {
 .sec-title {
   background: linear-gradient(to top right,var(--background-color), var(--secondary-color), var(--background-color));
   text-align: center;
-  padding: .8em;
+  padding: .6em;
   margin: 1%;
   font-size: 4vw;
 }
@@ -102,9 +118,22 @@ section:not(#hero-img) {
 .subsec-title {
   text-align: center;
   font-size: 3.5vw;
-  padding-top: 1em;
+  padding-top: .2em;
+  margin-top: 4%;
+  background: -webkit-linear-gradient(var(--primary-color), var(--secondary-color));
+  background-color: black;
+  margin: 4%, 4%, 2%, 4%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+.sec-paragraph {
+  text-align: center;
+  font-size: clamp(.6rem, 1vw + .6rem, 1.3rem);
+  padding: 0 20vw 2% 20vw;
+  margin-bottom: 2%;
+  /* background-color: red; */
+}
 
 #features-and-pricing {
   display: flex;
