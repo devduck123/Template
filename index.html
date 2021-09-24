@@ -140,7 +140,7 @@
       </section>
 
       <section id="features-and-pricing" id="page3" class="page">
-        <section id="features">
+        <subsection id="features">
           <h1 class="sec-title">Features</h1>
           <p class="sec-paragraph">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et natus,
@@ -151,7 +151,7 @@
             optio fugiat, ipsam quam unde!
           </p>
 
-          <section id="feature-list">
+          <div id="feature-list">
             <subsection class="feature-item">
               <h2 class="subsec-title">feature1</h2>
               <p class="sec-paragraph">
@@ -173,10 +173,10 @@
                 sit libero consequuntur similique impedit sed.
               </p>
             </subsection>
-          </section>
-        </section>
+          </div>
+        </subsection>
 
-        <section id="pricing">
+        <subsection id="pricing">
           <h1 class="sec-title">Pricing</h1>
           <p class="sec-paragraph">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
@@ -187,7 +187,7 @@
             neque fugit. Rerum.
           </p>
 
-          <section id="pricing-list">
+          <div id="pricing-list">
             <subsection class="pricing-item">
               <h2 class="subsec-title">pricing1</h2>
               <p class="sec-paragraph">
@@ -209,20 +209,41 @@
                 sit libero consequuntur similique impedit sed.
               </p>
             </subsection>
-          </section>
-        </section>
+          </div>
+        </subsection>
       </section>
 
-      <section id="contact" id="page4" class="page">
+      <section id="contact-resources" id="page4" class="page">
         <h1 class="sec-title">Contact Us | Resources</h1>
-        <p>
+        <subsection id="contact-us">
+          <form id="contact-info" method="GET" action="README.md">
+            <div>
+              <label for="first-name">First Name:</label>
+              <input type="text" placeholder="Jeff" id="first-name" name="first-name">
+              
+              <label for="last-name">Last Name:</label>
+              <input type="text" placeholder="Bezos" id="last-name" name="last-name">
+
+              <label for="email">Email:</label>
+              <input type="email" placeholder="xyz@email.com" id="email" name="email">
+
+              <button type="submit" id="contact-btn" name="contact-btn">Message us!</button>
+            </div>
+          </formid>
+        </subsection>
+
+        <subsection id="resources">
+
+        </subsection>
+
+        <!-- <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
           voluptate architecto recusandae illo libero at, a sed, animi facilis
           obcaecati vitae nobis molestiae voluptas magnam temporibus soluta
           iusto modi adipisci ducimus assumenda, inventore commodi totam ut rem.
           Quidem voluptatem atque alias dolorem! Alias, ipsam tempore adipisci
           temporibus ut quos iure.
-        </p>
+        </p> -->
       </section>
     </main>
     <script src="main.js"></script>

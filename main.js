@@ -12,11 +12,11 @@ function showPage(page) {
   } else if (currPageID === "#page3") {
     document.querySelector("#features-and-pricing").style.display = "flex";
   } else if (currPageID === "#page4") {
-    document.querySelector("#contact").style.display = "block";
+    document.querySelector("#contact-resources").style.display = "block";
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll("button").forEach((button) => {
     button.onclick = function () {
       // console.log(this.dataset.page);

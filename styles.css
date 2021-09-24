@@ -161,14 +161,26 @@ section:not(#hero-img) {
   max-width: 90%;
 }
 
-/* #features > .sec-paragraph, #pricing > .sec-paragraph {
-  color: red;
+#features > .sec-paragraph, #pricing > .sec-paragraph {
+  margin-bottom: 3vh;
+  padding: 0 8vw 4% 8vw;
 }
 
-#feature-list > .feature-item {
-  color: blue;
-} */
+.feature-item > .sec-paragraph, .pricing-item > .sec-paragraph {
+  padding: 0 15vw 2% 15vw;
+}
 
+#contact-info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#contact-info > div > input {
+  text-align: center;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *,
